@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.gold {
+    color: #d4af37;
+}
+
+header {
+    background: #1e3a52;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.logo {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.hero {
+    background: linear-gradient(135deg, #d4af37 0%, #f4e4c1 100%);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.3;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1a1a2e;
+}
+
+.about {
+    background-color: #f9f9f9;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.uk-badge {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #1a1a2e;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.products {
+    background-color: #fff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-card {
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid #d4af37;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+}
+
+.product-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.product-label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #d4af37;
+    color: white;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.additional-products {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.bespoke {
+    background: #1e3a52;
+    color: white;
+}
+
+.wholesale {
+    background-color: #fff;
+    border-top: 4px solid #d4af37;
+    border-bottom: 4px solid #d4af37;
+}
+
+.wholesale-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wholesale-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.wholesale-benefits {
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border: 2px solid #d4af37;
+}
+
+.wholesale-benefits ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.wholesale-benefits li {
+    padding: 0.8rem 0;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.wholesale-benefits li:before {
+    content: "✓ ";
+    color: #d4af37;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.faire-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+}
+
+.faire-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.bespoke h2 {
+    color: white;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid #d4af37;
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    background-color: #f9f9f9;
+}
+
+.contact-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #1a1a2e;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.contact-direct {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.contact-direct a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-direct a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 0.5rem;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+    
+    .features,
+    .product-grid,
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
